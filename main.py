@@ -52,7 +52,7 @@ if uploaded_file is not None:
 
     embeddings_model = OpenAIEmbeddings(
         model="text-embedding-3-large",
-        open_api_key=openai_key,
+        openai_api_key=openai_key,
     )
 
     import chromadb
