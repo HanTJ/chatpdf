@@ -95,5 +95,4 @@ if uploaded_file is not None:
             )
 
             result = rag_chain.invoke(question)
-            st.write(result)
 
