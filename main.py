@@ -26,7 +26,7 @@ openai_key = st.text_input('OPEN_AI_API_KEY', type="password")
 uploaded_file = st.file_uploader("PDF 파일을 올려주세요!", type=['pdf'])
 st.write("---")
 
-button(username="{gauguin135}", floating=True, width=221)
+button(username="gauguin135", floating=True, width=200)
 
 def pdf_to_document(uploaded_file):
     temp_dir = tempfile.TemporaryDirectory()
@@ -51,7 +51,7 @@ if uploaded_file is not None:
 
     embeddings_model = OpenAIEmbeddings(
         model="text-embedding-3-large",
-        open_api_key=openai_key
+        open_api_key=openai_key,
     )
 
     import chromadb
