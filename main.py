@@ -73,6 +73,7 @@ if uploaded_file is not None:
 
     if st.button("질문하기"):
         with st.spinner('Wait for it...'):
+            llm = ChatOpenAI(temperature=0, openai_api_key=openai_key)
             retriever_from_llm = MultiQueryRetriever.from_llm(
                 retriever=db.as_retriever(), llm=llm
             )
