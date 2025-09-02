@@ -5,3 +5,5 @@ langchain-openai
 langchain-chroma
 streamlit
 pysqlite3-binary
+streamlit-extras
+protobuf~=3.19.0
