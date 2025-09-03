@@ -2,8 +2,9 @@ pypdf
 langchain
 langchain_community
 langchain-openai
-langchain-chroma
 streamlit
-pysqlite3-binary
 streamlit-extras
 protobuf~=3.19.0
+rank_bm25
+tiktoken
+faiss-cpu
